@@ -3,7 +3,7 @@
 * 递归要点
 终止条件；处理当前层；进入下一层；清除当前变量（可选）
 * 递归代码模板    
-'''   
+```
 Python   
 def recursion(level, param1, param2, ...):    
     1 recursion terminator    
@@ -15,13 +15,13 @@ def recursion(level, param1, param2, ...):
     3 drill down    
     self.recursion(level + 1, p1, ...)    
     4 reverse the current level status if needed   
-'''
+```
 
 ## 回溯  
 * 回溯要点  
 终止条件；选择、下一步、撤销选择；清除当前变量（可选）  
 * 回溯代码模板  
-'''   
+```  
 result = []     
 def backtrack(路径, 选择列表):    
     if 满足结束条件:    
@@ -32,13 +32,13 @@ def backtrack(路径, 选择列表):
         做选择      
         backtrack(路径, 选择列表)      
         撤销选择     
-'''
+```
 
 ## 分治
 * 分治要点     
 终止条件；分解子问题、处理子问题、合并结果；清除当前变量（可选）      
 * 分治代码模板      
-'''   
+```  
 Python   
 def divide_conquer(problem, param1, param2, ...):    
   1 recursion terminator    
@@ -60,7 +60,7 @@ def divide_conquer(problem, param1, param2, ...):
   result = process_result(subresult1, subresult2, subresult3, …)   
 	   
   revert the current level states   
-'''   
+``` 
 
 ## 个人理解
 分治和回溯是递归的特殊表现形式，都存在终止条件判断，变化点在于如何处理当前层和进入下一层。
